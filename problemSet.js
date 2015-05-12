@@ -1,12 +1,22 @@
 
-
 function frameYourPhrase(phrase) {
 
 var arr = phrase.split(" ");
 
-console.log(arr);
+
+var max = 0;
 
 var x = phrase.length;
+
+for (var j = 0; j < arr.length; j++)
+{
+
+if (arr[j].length > max)
+{
+  max = arr[j].length;
+}
+}
+
 
 var str = "";
    /*
@@ -22,22 +32,25 @@ var str = "";
      the longest word in the phrase will dictate the size of the box.
    */  
 
-   for(var i = 0; i<x; i++)
+for(var k = 0; k < arr.length; k++)
+{
+   for(var i = 0; i<max; i++)
    {
     str+= "*";
    }
 
 str+="\n";
-   str+=phrase + "\n";
-   for(var i = 0; i<x; i++)
+   str+=arr[k] + "\n";
+   for(var i = 0; i<max; i++)
    {
     str+= "*";
    }
+ }
 
 return str;
 }
 
-function isPrime(num) {
+function isPrime(x) {
     /*
       TODO: Write a functiont that decides if the integer number provided
       is prime.  In other words, the number is only divisible by 1 and
@@ -46,7 +59,16 @@ function isPrime(num) {
       If this is too challenging, hard code the first 15 prime numbers and
       return true if the number is in the list.
     */
-    return false;
+
+     var y = 2; 
+     prime = true; 
+     while (y < x)
+        { 
+          if (x % y === 0) 
+              { prime = false; } 
+            y++; 
+        } 
+        return prime;
 }
 
 
