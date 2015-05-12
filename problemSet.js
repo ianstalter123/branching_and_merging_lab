@@ -20,6 +20,7 @@ if (arr[j].length > max)
 
 var str = "";
    /*
+   test
      TODO: Write a function that takes a string like "Hello World!" and
      returns the string as a framed phrase like:
      **********
