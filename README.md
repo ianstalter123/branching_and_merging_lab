@@ -3,6 +3,7 @@
 
 An exercise to exemplify branching and merging
 
+
 ## Instructions
 
 * Form teams of 2 people
