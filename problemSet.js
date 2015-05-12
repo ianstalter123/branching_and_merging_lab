@@ -1,5 +1,4 @@
 
-
 function frameYourPhrase(phrase) {
 
 var arr = phrase.split(" ");
@@ -7,6 +6,13 @@ var arr = phrase.split(" ");
 console.log(arr);
 
 var x = phrase.length;
+
+for (var j = 0; j < arr.length; j++)
+{
+
+  console.log(arr[j].length);
+}
+
 
 var str = "";
    /*
