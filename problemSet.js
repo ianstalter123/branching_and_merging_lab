@@ -8,7 +8,7 @@ console.log(arr);
 
 var x = phrase.length;
 
-var str = ""
+var str = "";
    /*
      TODO: Write a function that takes a string like "Hello World!" and
      returns the string as a framed phrase like:
