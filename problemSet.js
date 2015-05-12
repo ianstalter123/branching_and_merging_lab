@@ -3,19 +3,28 @@ function frameYourPhrase(phrase) {
 
 var arr = phrase.split(" ");
 
-console.log(arr);
+
+var max = 0;
 
 var x = phrase.length;
 
 for (var j = 0; j < arr.length; j++)
 {
 
+
   console.log(arr[j].length);
+
+if (arr[j].length > max)
+{
+  max = arr[j].length;
+}
+
 }
 
 
 var str = "";
    /*
+   test
      TODO: Write a function that takes a string like "Hello World!" and
      returns the string as a framed phrase like:
      **********
@@ -28,17 +37,20 @@ var str = "";
      the longest word in the phrase will dictate the size of the box.
    */  
 
-   for(var i = 0; i<x; i++)
+for(var k = 0; k < arr.length; k++)
+{
+   for(var i = 0; i<max; i++)
    {
     str+= "*";
    }
 
 str+="\n";
-   str+=phrase + "\n";
-   for(var i = 0; i<x; i++)
+   str+=arr[k] + "\n";
+   for(var i = 0; i<max; i++)
    {
     str+= "*";
    }
+ }
 
 return str;
 }
