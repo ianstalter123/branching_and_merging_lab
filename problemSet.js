@@ -2,7 +2,13 @@
 
 function frameYourPhrase(phrase) {
 
+var arr = phrase.split(" ");
 
+console.log(arr);
+
+var x = phrase.length;
+
+var str = ""
    /*
      TODO: Write a function that takes a string like "Hello World!" and
      returns the string as a framed phrase like:
@@ -11,11 +17,24 @@ function frameYourPhrase(phrase) {
      * World! *
      **********
 
+
      Pay attention to the spacing.  The box should be a square.  In other words,
      the longest word in the phrase will dictate the size of the box.
    */  
 
-   return "**********\n*" + phrase + " *\n**********";
+   for(var i = 0; i<x; i++)
+   {
+    str+= "*";
+   }
+
+str+="\n";
+   str+=phrase + "\n";
+   for(var i = 0; i<x; i++)
+   {
+    str+= "*";
+   }
+
+return str;
 }
 
 function isPrime(num) {
