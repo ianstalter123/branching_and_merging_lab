@@ -15,7 +15,7 @@ function frameYourPhrase(phrase) {
    return "**********\n* Hello  *\n* World! *\n**********";
 }
 
-function isPrime(num) {
+function isPrime(x) {
     /*
       TODO: Write a functiont that decides if the integer number provided
       is prime.  In other words, the number is only divisible by 1 and
@@ -24,7 +24,16 @@ function isPrime(num) {
       If this is too challenging, hard code the first 15 prime numbers and
       return true if the number is in the list.
     */
-    return false;
+
+     var y = 2; 
+     prime = true; 
+     while (y < x)
+        { 
+          if (x % y === 0) 
+              { prime = false; } 
+            y++; 
+        } 
+        return prime;
 }
 
 
